@@ -1,0 +1,7 @@
+import os
+i = 0
+path = os.chdir("C:\\Users\\AZAN COM\\OneDrive\\Desktop\\New folder")
+for file in os.listdir(path):
+  new_file = "gfg_pic{}.png".format(i)
+  os.rename(file,new_file)
+  i + 1
